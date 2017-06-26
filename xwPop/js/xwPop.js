@@ -31,7 +31,9 @@
 			width:420,
 		},
 		loadinit:{
-			text:'载入中...'
+			text:'载入中...',
+			color:"#fff",
+			bgColor:"#fff"
 		}
 	}
 	xwPop.msg = msg;
@@ -157,10 +159,11 @@
 	
 	function load(o){
 		var _o=$.extend({},xwPop.loadinit,o),loadBody=[];
+		console.log(_o)
 		var loadElement = document.createElement("div");
 		loadElement.setAttribute("class","xw-pop-loadbox");
-		loadBody[loadBody.length]="<div class=\"xs-pop-loading-section\"><div class=\"xw-pop-loading\"><span></span><span></span><span></span><span></span><span></span></div>";
-		loadBody[loadBody.length]="<div class=\"xw-pop-loading-text\">"+_o.text+"</div></div>"
+		loadBody[loadBody.length]="<div class=\"xs-pop-loading-section\"><div class=\"xw-pop-loading\"><span style=background:"+_o.bgColor+"></span><span style=background:"+_o.bgColor+"></span></span><span style=background:"+_o.bgColor+"></span></span><span style=background:"+_o.bgColor+"></span></span><span style=background:"+_o.bgColor+"></span></span></div>";
+		loadBody[loadBody.length]="<div class=\"xw-pop-loading-text\" style=color:"+_o.color+">"+_o.text+"</div></div>"
 		loadElement.innerHTML = loadBody.join("");
 		$("body").append($(loadElement))
 	}
