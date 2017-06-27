@@ -27,7 +27,7 @@
 .xw-pop-modalbox .xw-pop-modal-body-confirm:after{content:'';display:block;left:20px;top:50%;transform:translateY(-50%);border-radius:50%;background:#f7ba2a;position:absolute;z-index:10;width:36px;height:36px;}
 
 /*loading*/
-.xw-pop-loadbox{position:fixed;left:0;top:0;bottom:0;right:0;background:rgba(0,0,0,.6);text-align:center}
+.xw-pop-loadbox{position:fixed;left:0;z-index:1000;top:0;bottom:0;right:0;background:rgba(0,0,0,.6);text-align:center}
 .xw-pop-loadbox:after{content:'';height:100%;display:inline-block;vertical-align:middle;width:0;}
 .xw-pop-loadbox .xs-pop-loading-section{display:inline-block;vertical-align:middle;}
 .xw-pop-loadbox .xw-pop-loading-text{font-size:14px;color:#fff;margin-top:10px}
