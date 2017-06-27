@@ -32,8 +32,40 @@
 .xw-pop-loadbox .xs-pop-loading-section{display:inline-block;vertical-align:middle;}
 .xw-pop-loadbox .xw-pop-loading-text{font-size:14px;color:#fff;margin-top:10px}
 .xw-pop-loading{width: 150px;height: 15px;margin: 0 auto;text-align: center;}
-.xw-pop-loading span{display: inline-block;width: 15px;height: 100%;margin-right: 5px;background:#fff;animation: load 1.04s ease infinite;-webkit-animation: load 1.04s ease infinite;}
+.xw-pop-loading span{display: inline-block;width: 15px;height: 100%;margin-right: 5px;background:#fff;animation: load 1.04s ease infinite;-webkit-animation: load 1.04s ease infinite;-ms-animation: load 1.04s ease infinite;-o-animation: load 1.04s ease infinite;}
 .xw-pop-loading span:last-child{margin-right: 0px; }
+@keyframes load{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@-moz-keyframes load{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@-ms-keyframes load{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@-o-keyframes load{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 @-webkit-keyframes load{
     0%{
         opacity: 1;
