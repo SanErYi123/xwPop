@@ -84,4 +84,13 @@
 
 @media (max-width:767px) {
 	.xw-pop-modalbox .xw-pop-modal-section{max-width:90%}
+	.xw-pop-msgbox{max-width:100%;height:auto}
+	.xw-pop-msgbox .xw-pop-msgbox-text p{white-space:normal}
+	.xw-pop-msgbox .xw-pop-msgbox-icon{bottom:0}
+	.xw-pop-msgbox .xw-pop-msgbox-icon:after{content:'';height:100%;display:inline-block;vertical-align:middle;width:0;}
+	.xw-pop-msgbox .xw-pop-msgbox-icon img{display:inline-block;vertical-align:middle}
+	.xw-pop-msgbox-info .xw-pop-msgbox-icon{background-color:#50bfff}
+	.xw-pop-msgbox-warning .xw-pop-msgbox-icon{background-color:#f7ba2a}
+	.xw-pop-msgbox-success .xw-pop-msgbox-icon{background-color:#13ce66}
+	.xw-pop-msgbox-error .xw-pop-msgbox-icon{background-color:#ff4949}
 }
